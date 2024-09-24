@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+:root{
+
+/*colors*/
+
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+/*fonts*/
+--font-size: 16px;
+--font-weight-normal: 400;
+--font-weight-bold: 700;
+--font-family: 'Josefin Sans';
+}
+body{
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: #30588c;
+}
+#inp{
+    width: 280px; /* Width of the input field */
+    padding: 7px; /* Padding inside the input field */
+    font-size: var(--font-size); /* Font size of the input text */
+    font-family: var(--font-family); /* Font family */
+    border: none; /* Border color and thickness */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Removes the default outline */
+    transition: 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for border and shadow */
+    margin-left: 50px;
+    margin-top: 20px;
+}
+#inp[type="text"]:focus {
+    box-shadow: 0 0 15px rgba(102, 175, 233, 0.6) ; /* Shadow around the input when focused */
+}
+ /* Placeholder text styling */
+#inp[type="text"]::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+#btn{
+    background-color: rgb(243, 243, 236);
+    border: none;
+    color: #30588c;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+    border-radius: 5px;
+    margin-left: 170px;
+    transition: rgb(243, 243, 236) 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+#list{
+    list-style: none;
+   /* padding-left: 20px; /* Add padding to the left */
+    margin-left: 40px;
+    margin-top: 20px;
+    font-family: var(--font-family); /* Font family */
+    font-size: 16px; /* Font size */
+    color: #30588c;
+    width: 65%;
+}
+#list li{
+    background-color:  rgb(243, 243, 236);
+    margin-bottom: 10px;
+    margin-left: -30px;
+    padding: 8px 16px;
+    font-weight: var(--font-weight-bold);
+    border-radius: 5px;
+}
+#list li:hover{
+    cursor: pointer;
+    background-color: #082956;
+    color: rgb(243, 243, 236);
+    transform: scale(1.06);
+    transition: ease-in-out all 0.7s;
+
+}
+.btnEdit{
+    background-color:rgb(194, 224, 247) ;
+    color:#30588c;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 5px;
+    left: 52%;
+    top: 38%;
+    cursor: pointer;
+    position: relative;
+
+}
+.btnDelete{
+    background-color:rgb(194, 224, 247) ;
+    color:#30588c;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 5px;
+    left: 60%;
+    top: 38%;
+    cursor: pointer;
+    position: relative;
+}
+
